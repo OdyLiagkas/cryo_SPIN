@@ -13,7 +13,7 @@ from dataset import StarfileDataLoader, RealDataset
 from torch.utils.data import DataLoader
 
 from pose_models import PoseModel
-from multihypo_models import CryoSAPIENCE
+from multihypo_models import CryoSPIN
 from tqdm import tqdm
 from torch.utils.tensorboard import SummaryWriter
 
@@ -78,6 +78,7 @@ if __name__ == "__main__":
 
     sys.argv = [sys.argv[0]] + remaining_args
     args = parse_args(config)
+    os.makedirs(save_path, exist_ok=True)
     with open(os.path.join(save_path, 'config.yaml'), 'w') as file:
         yaml.dump(vars(args), file)
 
@@ -103,7 +104,7 @@ if __name__ == "__main__":
     # build the model
     num_rotations = args.num_rotations
     experimental = args.data == 'empiar10028'
-    model = CryoSAPIENCE(
+    model = CryoSPIN(
                     ctf_params=dataset.ctf_params if not experimental else None, 
                     num_rotations=num_rotations, 
                     sidelen=img_sz, 

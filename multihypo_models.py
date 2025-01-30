@@ -8,7 +8,7 @@ from utils.ctf import CTFRelion
 from utils.real_ctf import ExperimentalCTF
 
 
-class CryoSAPIENCE(nn.Module):
+class CryoSPIN(nn.Module):
     def __init__(self,  
                  num_rotations, 
                  ctf_params=None,
@@ -16,7 +16,7 @@ class CryoSAPIENCE(nn.Module):
                  num_octaves=4,
                  hartley=False,
                  experimental=False):
-        super(CryoSAPIENCE, self).__init__()
+        super(CryoSPIN, self).__init__()
         self.num_rotations = num_rotations
         self.sidelen = sidelen
 

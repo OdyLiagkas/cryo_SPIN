@@ -6,3 +6,7 @@ synthetic_data/spliceosome
 synthetic_data/spike
 synthetic_data/hsp
 assets/poses/.DS_Store
+tbd
+reconst_volumes
+ckpt
+config.yaml
