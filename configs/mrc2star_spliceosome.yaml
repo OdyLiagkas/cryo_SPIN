@@ -5,4 +5,4 @@ num_projs: 100000
 snr: 0.1
 power_signal: 0.1
 ctf_precompute: true
-output_dir: '../cryospin_particles'
+output_dir: 'synthetic_data/cryospin_particles'
