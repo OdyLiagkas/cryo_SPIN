@@ -1,7 +1,7 @@
 mrc: 'mrcfiles/spliceosome.mrc'
 resolution: 2.165
 sidelen: 256
-num_projs: 30016
+num_projs: 24320
 snr: 0.1
 power_signal: 0.1
 ctf_precompute: true
