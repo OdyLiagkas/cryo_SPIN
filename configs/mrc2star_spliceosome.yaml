@@ -1,4 +1,4 @@
-mrc: 'mrcfiles/spliceosome128.mrc'
+mrc: 'mrcfiles/spliceosome.mrc'
 resolution: 4.33
 sidelen: 128
 num_projs: 100000
