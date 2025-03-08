@@ -1,7 +1,7 @@
 mrc: 'mrcfiles/spliceosome128.mrc'
 resolution: 4.33
 sidelen: 128
-num_projs: 50000
+num_projs: 100000
 snr: 0.1
 power_signal: 0.1
 ctf_precompute: true
